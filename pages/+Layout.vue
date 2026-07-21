@@ -40,6 +40,13 @@
             {{ footerText ? footerText : "&copy; 2026 All Rights Reserved" }} & Powered by 小旗搭建网站 
           </a>
         </span>
+
+        <!-- 新增隐私政策、免责声明链接 -->
+        <div class="flex gap-4">
+          <a href="/privacy" class="hover:text-primary">隐私政策</a>
+          <a href="/disclaimer" class="hover:text-primary">免责声明</a>
+        </div>
+        
         <!-- 单条直接展示，多条用 dropdown -->
         <template v-if="supportContactItems.length === 1">
           <p class="flex items-center gap-2 text-sm">
